@@ -1,7 +1,7 @@
 use App\Models\Order;
 use App\Models\User;
 
-public function showByUser($id)
+public function userOrders($id)
 {
     $user = User::findOrFail($id);
     $orders = Order::with('orderItems.product') // nếu có liên kết
