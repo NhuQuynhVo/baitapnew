@@ -29,7 +29,7 @@
                                     </a>
                                 </td>
                                 <td>
-                                    <a href="{{ route('orders.user', $user->id) }}">Xem đơn hàng</a>
+                                    <a href="">Xem đơn hàng</a>
                                 </td>
                                 <td>
                                     <a href="{{ route('user.readUser', ['id' => $user->id]) }}">View</a> |
