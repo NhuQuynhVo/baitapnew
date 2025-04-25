@@ -37,3 +37,4 @@ Route::get('list', [CrudUserController::class, 'listUser'])->name('user.list');
 Route::get('signout', [CrudUserController::class, 'signOut'])->name('signout');
 Route::get('/users/role/{role}', [RoleController::class, 'showByRole'])->name('user.roleList');
 
+Route::get('/orders/user/{id}', [OrderController::class, 'showByUser'])->name('orders.user');
